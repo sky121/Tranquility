@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fYA-Ps-D9P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Tap to Continue"/>
                                 <connections>
-                                    <segue destination="q5v-fh-hsM" kind="show" id="xXU-Qd-28Y"/>
+                                    <segue destination="fYA-Ps-D9P" kind="presentation" modalPresentationStyle="fullScreen" id="peP-As-afd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,14 +42,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="-622"/>
+            <point key="canvasLocation" x="2303" y="-2281"/>
         </scene>
-        <!--Quote View Controller-->
+        <!--Quote-->
         <scene sceneID="uiB-0J-K2C">
             <objects>
                 <viewController id="q5v-fh-hsM" customClass="QuoteViewController" customModule="The_Happiness_Trinity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KRS-xN-QyS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY2-VE-fhn">
@@ -74,6 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="yc7-eF-GiP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Quote" image="quotation-icon" id="Znc-xD-rL8"/>
                     <navigationItem key="navigationItem" id="tqw-Rr-ehn"/>
                     <connections>
                         <outlet property="QuoteLabel" destination="IfU-Mf-LXn" id="crd-7P-s9p"/>
@@ -81,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cqx-be-Vkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="175"/>
+            <point key="canvasLocation" x="1330" y="-600"/>
         </scene>
         <!--Journal-->
         <scene sceneID="8SP-rJ-EEh">
@@ -147,7 +148,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WMg-PB-rhG"/>
+                        <segue destination="q5v-fh-hsM" kind="relationship" relationship="viewControllers" id="a1q-Q9-PdB"/>
                         <segue destination="hgv-xS-hsg" kind="relationship" relationship="viewControllers" id="GcW-NK-lMv"/>
                         <segue destination="TFI-ej-77K" kind="relationship" relationship="viewControllers" id="x3r-n1-YyN"/>
                     </connections>
@@ -164,12 +165,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VW-P2-RNm">
-                                <rect key="frame" x="86" y="291" width="80" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Dogs"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNm-B9-uOa">
                                 <rect key="frame" x="249" y="291" width="70" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -195,6 +190,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VW-P2-RNm">
+                                <rect key="frame" x="86" y="291" width="80" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Dogs"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6x9-RC-cab"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
