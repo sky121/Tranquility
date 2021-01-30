@@ -12,6 +12,8 @@ target 'The Happiness Trinity' do
     # Pods for testing
   end
 
+  pod 'FSCalendar'
+
   target 'The Happiness TrinityUITests' do
     # Pods for testing
   end
