@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="2303" y="-1489"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="iCB-OE-jaX">
             <objects>
-                <viewController id="SX6-Zx-6BS" sceneMemberID="viewController">
+                <viewController id="SX6-Zx-6BS" customClass="ImageViewController" customModule="The_Happiness_Trinity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ujc-pM-R2H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

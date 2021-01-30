@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABF76FEB25C5FCDE003A06EE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */; };
 		B0AC246625C5E6A700E2E056 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */; };
 		B0D23FFA25C51E9400488BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D23FF925C51E9400488BE2 /* AppDelegate.swift */; };
 		B0D23FFC25C51E9400488BE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D23FFB25C51E9400488BE2 /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		B0D23FF625C51E9400488BE2 /* The Happiness Trinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Happiness Trinity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D23FF925C51E9400488BE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				B0D2400425C51E9600488BE2 /* LaunchScreen.storyboard */,
 				B0D2400725C51E9600488BE2 /* Info.plist */,
 				B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */,
+				ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */,
 			);
 			path = "The Happiness Trinity";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				B0D23FFE25C51E9400488BE2 /* ViewController.swift in Sources */,
 				B0AC246625C5E6A700E2E056 /* QuoteViewController.swift in Sources */,
+				ABF76FEB25C5FCDE003A06EE /* ImageViewController.swift in Sources */,
 				B0D23FFA25C51E9400488BE2 /* AppDelegate.swift in Sources */,
 				B0D23FFC25C51E9400488BE2 /* SceneDelegate.swift in Sources */,
 			);
