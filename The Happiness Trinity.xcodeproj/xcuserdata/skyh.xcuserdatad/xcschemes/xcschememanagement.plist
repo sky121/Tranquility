@@ -7,7 +7,25 @@
 		<key>The Happiness Trinity.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B0D23FF525C51E9400488BE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0D2400B25C51E9600488BE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0D2401625C51E9600488BE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

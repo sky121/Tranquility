@@ -35,7 +35,7 @@ class QuoteViewController: UIViewController {
 
           RunLoop.main.run()
         }else{
-            print(ProcessInfo.processInfo.environment)
+           
            print("Environment Variables Not Set")
         }
     }
