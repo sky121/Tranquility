@@ -7,9 +7,6 @@ target 'The Happiness Trinity' do
 
   # Pods for The Happiness Trinity
   pod 'Alamofire', '~> 4.4'
-  # Add additional dependencies
-  pod 'OAuthSwift', '~> 1.1.0'
-  pod 'OAuthSwiftAlamofire'
   target 'The Happiness TrinityTests' do
     inherit! :search_paths
     # Pods for testing
