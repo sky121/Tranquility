@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		B0D2400625C51E9600488BE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D2400425C51E9600488BE2 /* LaunchScreen.storyboard */; };
 		B0D2401125C51E9600488BE2 /* The_Happiness_TrinityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2401025C51E9600488BE2 /* The_Happiness_TrinityTests.swift */; };
 		B0D2401C25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2401B25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift */; };
+		D05AC0BA25C60DC500662934 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AC0B825C60DC500662934 /* JournalViewController.swift */; };
+		D05AC0BB25C60DC500662934 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AC0B925C60DC500662934 /* CalendarViewController.swift */; };
 		F9EAAC1C8A9ACF0DEE63C75D /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E90D8DCAAACF1B417A79B37 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		B0D2401B25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Happiness_TrinityUITests.swift; sourceTree = "<group>"; };
 		B0D2401D25C51E9600488BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B484D5237B05C1A3BEB560BF /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D05AC0B825C60DC500662934 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		D05AC0B925C60DC500662934 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		EBEAA22DC7CCD30316153A90 /* Pods-The Happiness TrinityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE01E4FB02A570A687617645 /* Pods-The Happiness TrinityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +134,8 @@
 		B0D23FF825C51E9400488BE2 /* The Happiness Trinity */ = {
 			isa = PBXGroup;
 			children = (
+				D05AC0B925C60DC500662934 /* CalendarViewController.swift */,
+				D05AC0B825C60DC500662934 /* JournalViewController.swift */,
 				B0D23FF925C51E9400488BE2 /* AppDelegate.swift */,
 				B0D23FFB25C51E9400488BE2 /* SceneDelegate.swift */,
 				B0D23FFD25C51E9400488BE2 /* ViewController.swift */,
@@ -171,7 +177,6 @@
 				FE01E4FB02A570A687617645 /* Pods-The Happiness TrinityTests.debug.xcconfig */,
 				EBEAA22DC7CCD30316153A90 /* Pods-The Happiness TrinityTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -418,6 +423,8 @@
 				B0AC246625C5E6A700E2E056 /* QuoteViewController.swift in Sources */,
 				ABF76FEB25C5FCDE003A06EE /* ImageViewController.swift in Sources */,
 				B0D23FFA25C51E9400488BE2 /* AppDelegate.swift in Sources */,
+				D05AC0BA25C60DC500662934 /* JournalViewController.swift in Sources */,
+				D05AC0BB25C60DC500662934 /* CalendarViewController.swift in Sources */,
 				B0D23FFC25C51E9400488BE2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

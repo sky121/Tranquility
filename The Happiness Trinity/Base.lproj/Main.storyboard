@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -87,35 +87,55 @@
         <!--Journal-->
         <scene sceneID="8SP-rJ-EEh">
             <objects>
-                <viewController id="TFI-ej-77K" sceneMemberID="viewController">
+                <viewController id="TFI-ej-77K" customClass="JournalViewController" customModule="The_Happiness_Trinity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tfD-mx-yvN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is one accomplishment you are proud of today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-EL-bAF">
-                                <rect key="frame" x="17" y="110" width="381" height="262"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zLf-Df-oTa">
-                                <rect key="frame" x="46" y="491" width="322" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-yu-knl">
-                                <rect key="frame" x="166" y="621" width="104" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="s3j-nz-Scs">
+                                <rect key="frame" x="15" y="109.99999999999999" width="384" height="147.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is one accomplishment you are proud of today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-EL-bAF">
+                                        <rect key="frame" x="9" y="0.0" width="366.33333333333331" height="69.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="zLf-Df-oTa">
+                                        <rect key="frame" x="15" y="109.33333333333333" width="354" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zLf-Df-oTa" secondAttribute="trailing" constant="15" id="m61-lu-hPK"/>
+                                    <constraint firstItem="zLf-Df-oTa" firstAttribute="leading" secondItem="s3j-nz-Scs" secondAttribute="leading" constant="15" id="qll-y8-UJ8"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-yu-knl">
+                                <rect key="frame" x="155" y="599" width="104" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <segue destination="b3T-CY-lxO" kind="show" id="TfV-mQ-d84"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A8S-E6-Qg5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MfY-yu-knl" firstAttribute="leading" secondItem="A8S-E6-Qg5" secondAttribute="leading" constant="155" id="09N-Fw-xF6"/>
+                            <constraint firstItem="A8S-E6-Qg5" firstAttribute="bottom" secondItem="MfY-yu-knl" secondAttribute="bottom" constant="40" id="11o-om-aVH"/>
+                            <constraint firstItem="s3j-nz-Scs" firstAttribute="leading" secondItem="tfD-mx-yvN" secondAttribute="leading" constant="15" id="6WY-7v-Fb8"/>
+                            <constraint firstAttribute="trailing" secondItem="s3j-nz-Scs" secondAttribute="trailing" constant="15" id="Z1L-dV-8vK"/>
+                            <constraint firstItem="s3j-nz-Scs" firstAttribute="top" secondItem="A8S-E6-Qg5" secondAttribute="top" constant="110" id="ciF-SX-syJ"/>
+                            <constraint firstItem="A8S-E6-Qg5" firstAttribute="trailing" secondItem="MfY-yu-knl" secondAttribute="trailing" constant="155" id="qIV-dK-Nm4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Journal" image="journal-icon" id="Nnx-0t-AAB"/>
+                    <connections>
+                        <outlet property="answerAchieve" destination="zLf-Df-oTa" id="ds9-NK-On1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teA-QV-Sph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,6 +246,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEq-T6-Erb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2303" y="968"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="Fli-eq-Ybo">
+            <objects>
+                <viewController id="b3T-CY-lxO" customClass="CalendarViewController" customModule="The_Happiness_Trinity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ODa-mB-z8g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g4T-gg-4pA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7RO-dd-yfn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Id9-xu-ek5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3319" y="217"/>
         </scene>
     </scenes>
     <resources>
