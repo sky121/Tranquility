@@ -19,12 +19,14 @@ class QuoteViewController: UIViewController {
     @IBOutlet weak var QuoteLabel: UILabel!
     
     @IBAction func SendButton(_ sender: Any) {
+        
+        
         if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"],
            let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
-
+            
           let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
           let parameters = ["From": "16093364149", "To": "4159609350", "Body": "Hello from Swift!"]
-
+            print("sending message")
           Alamofire.request(url, method: .post, parameters: parameters)
             .authenticate(user: accountSID, password: authToken)
             .responseJSON { response in
@@ -32,6 +34,9 @@ class QuoteViewController: UIViewController {
           }
 
           RunLoop.main.run()
+        }else{
+            print(ProcessInfo.processInfo.environment)
+           print("Environment Variables Not Set")
         }
     }
     
