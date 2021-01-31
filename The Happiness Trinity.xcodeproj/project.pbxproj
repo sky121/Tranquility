@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02F237C3E7EB38EC6E7DE85D /* Pods_The_Happiness_TrinityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2372030F55ED49CA337AA199 /* Pods_The_Happiness_TrinityTests.framework */; };
-		601515580739887DA7674226 /* Pods_The_Happiness_Trinity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27025BBC73F4DFC1AA8FF519 /* Pods_The_Happiness_Trinity.framework */; };
+		25F7EBC040D480E8055778FB /* Pods_The_Happiness_Trinity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C710C29E70FDA8EE133B7 /* Pods_The_Happiness_Trinity.framework */; };
+		2D1C18E8CD8733A0CB9C7A6D /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E262E1A4C3B409C2257B6E /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */; };
+		96A5489F2C9099DA0474CE22 /* Pods_The_Happiness_TrinityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1F0E3FAB11373410C295BC /* Pods_The_Happiness_TrinityTests.framework */; };
 		ABF76FEB25C5FCDE003A06EE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */; };
 		ABF7702425C6742C003A06EE /* PictureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7702325C6742C003A06EE /* PictureCollectionViewController.swift */; };
+		ABF7703125C69550003A06EE /* PictureViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7703025C69550003A06EE /* PictureViewCell.swift */; };
 		B0AC246625C5E6A700E2E056 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */; };
 		B0AC246825C64F3A00E2E056 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC246725C64F3A00E2E056 /* AddContactViewController.swift */; };
 		B0D23FFA25C51E9400488BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D23FF925C51E9400488BE2 /* AppDelegate.swift */; };
@@ -23,7 +25,6 @@
 		B0D2401C25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2401B25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift */; };
 		D05AC0BA25C60DC500662934 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AC0B825C60DC500662934 /* JournalViewController.swift */; };
 		D05AC0BB25C60DC500662934 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AC0B925C60DC500662934 /* CalendarViewController.swift */; };
-		F9EAAC1C8A9ACF0DEE63C75D /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E90D8DCAAACF1B417A79B37 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2372030F55ED49CA337AA199 /* Pods_The_Happiness_TrinityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Happiness_TrinityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27025BBC73F4DFC1AA8FF519 /* Pods_The_Happiness_Trinity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Happiness_Trinity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E431444600BC6E0E42096F4 /* Pods-The Happiness Trinity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity/Pods-The Happiness Trinity.debug.xcconfig"; sourceTree = "<group>"; };
-		5E90D8DCAAACF1B417A79B37 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F1C0E0E6A3FA5CF164C8E86 /* Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7706224B72631092F98E5FB9 /* Pods-The Happiness Trinity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity.release.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity/Pods-The Happiness Trinity.release.xcconfig"; sourceTree = "<group>"; };
+		088417B72C88D824438E376B /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24B9D663C065247DAB89D347 /* Pods-The Happiness TrinityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.release.xcconfig"; sourceTree = "<group>"; };
+		37F6DDA69CD373FBDB036402 /* Pods-The Happiness Trinity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity.release.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity/Pods-The Happiness Trinity.release.xcconfig"; sourceTree = "<group>"; };
+		42101BACCA0529CA0A64D989 /* Pods-The Happiness Trinity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity/Pods-The Happiness Trinity.debug.xcconfig"; sourceTree = "<group>"; };
 		ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		ABF7702325C6742C003A06EE /* PictureCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewController.swift; sourceTree = "<group>"; };
+		ABF7703025C69550003A06EE /* PictureViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewCell.swift; sourceTree = "<group>"; };
+		AE3984D0ADF690D688B33DF8 /* Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		B0AC246725C64F3A00E2E056 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		B0D23FF625C51E9400488BE2 /* The Happiness Trinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Happiness Trinity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,11 +69,12 @@
 		B0D2401725C51E9600488BE2 /* The Happiness TrinityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Happiness TrinityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D2401B25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Happiness_TrinityUITests.swift; sourceTree = "<group>"; };
 		B0D2401D25C51E9600488BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B484D5237B05C1A3BEB560BF /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB1F0E3FAB11373410C295BC /* Pods_The_Happiness_TrinityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Happiness_TrinityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05AC0B825C60DC500662934 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		D05AC0B925C60DC500662934 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		EBEAA22DC7CCD30316153A90 /* Pods-The Happiness TrinityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.release.xcconfig"; sourceTree = "<group>"; };
-		FE01E4FB02A570A687617645 /* Pods-The Happiness TrinityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3E262E1A4C3B409C2257B6E /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96C710C29E70FDA8EE133B7 /* Pods_The_Happiness_Trinity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Happiness_Trinity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADB7005725518ADCE38B093 /* Pods-The Happiness TrinityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601515580739887DA7674226 /* Pods_The_Happiness_Trinity.framework in Frameworks */,
+				25F7EBC040D480E8055778FB /* Pods_The_Happiness_Trinity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F237C3E7EB38EC6E7DE85D /* Pods_The_Happiness_TrinityTests.framework in Frameworks */,
+				96A5489F2C9099DA0474CE22 /* Pods_The_Happiness_TrinityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,19 +98,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9EAAC1C8A9ACF0DEE63C75D /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */,
+				2D1C18E8CD8733A0CB9C7A6D /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24376CE96546AF114C896E3F /* Frameworks */ = {
+		10FE770F5472356EE810B59B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27025BBC73F4DFC1AA8FF519 /* Pods_The_Happiness_Trinity.framework */,
-				5E90D8DCAAACF1B417A79B37 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */,
-				2372030F55ED49CA337AA199 /* Pods_The_Happiness_TrinityTests.framework */,
+				D96C710C29E70FDA8EE133B7 /* Pods_The_Happiness_Trinity.framework */,
+				D3E262E1A4C3B409C2257B6E /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */,
+				CB1F0E3FAB11373410C295BC /* Pods_The_Happiness_TrinityTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,7 +123,7 @@
 				B0D2401A25C51E9600488BE2 /* The Happiness TrinityUITests */,
 				B0D23FF725C51E9400488BE2 /* Products */,
 				CB23E3C76BAA39576C822A0D /* Pods */,
-				24376CE96546AF114C896E3F /* Frameworks */,
+				10FE770F5472356EE810B59B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +153,7 @@
 				ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */,
 				B0AC246725C64F3A00E2E056 /* AddContactViewController.swift */,
 				ABF7702325C6742C003A06EE /* PictureCollectionViewController.swift */,
+				ABF7703025C69550003A06EE /* PictureViewCell.swift */,
 			);
 			path = "The Happiness Trinity";
 			sourceTree = "<group>";
@@ -176,12 +179,12 @@
 		CB23E3C76BAA39576C822A0D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E431444600BC6E0E42096F4 /* Pods-The Happiness Trinity.debug.xcconfig */,
-				7706224B72631092F98E5FB9 /* Pods-The Happiness Trinity.release.xcconfig */,
-				6F1C0E0E6A3FA5CF164C8E86 /* Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig */,
-				B484D5237B05C1A3BEB560BF /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */,
-				FE01E4FB02A570A687617645 /* Pods-The Happiness TrinityTests.debug.xcconfig */,
-				EBEAA22DC7CCD30316153A90 /* Pods-The Happiness TrinityTests.release.xcconfig */,
+				42101BACCA0529CA0A64D989 /* Pods-The Happiness Trinity.debug.xcconfig */,
+				37F6DDA69CD373FBDB036402 /* Pods-The Happiness Trinity.release.xcconfig */,
+				AE3984D0ADF690D688B33DF8 /* Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig */,
+				088417B72C88D824438E376B /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */,
+				EADB7005725518ADCE38B093 /* Pods-The Happiness TrinityTests.debug.xcconfig */,
+				24B9D663C065247DAB89D347 /* Pods-The Happiness TrinityTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -193,11 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D2402025C51E9600488BE2 /* Build configuration list for PBXNativeTarget "The Happiness Trinity" */;
 			buildPhases = (
-				16ECF10588849D67376B555E /* [CP] Check Pods Manifest.lock */,
+				11BA3A7AA31C051CCD196139 /* [CP] Check Pods Manifest.lock */,
 				B0D23FF225C51E9400488BE2 /* Sources */,
 				B0D23FF325C51E9400488BE2 /* Frameworks */,
 				B0D23FF425C51E9400488BE2 /* Resources */,
-				3BCDE8BC9A2FC69858D36FFF /* [CP] Embed Pods Frameworks */,
+				2F2B3A90B57DE3767BF447AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,7 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D2402325C51E9600488BE2 /* Build configuration list for PBXNativeTarget "The Happiness TrinityTests" */;
 			buildPhases = (
-				595A8E3F9BF3D48A88506E2A /* [CP] Check Pods Manifest.lock */,
+				924075A8E6BDDDBAFE37B499 /* [CP] Check Pods Manifest.lock */,
 				B0D2400825C51E9600488BE2 /* Sources */,
 				B0D2400925C51E9600488BE2 /* Frameworks */,
 				B0D2400A25C51E9600488BE2 /* Resources */,
@@ -231,11 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0D2402625C51E9600488BE2 /* Build configuration list for PBXNativeTarget "The Happiness TrinityUITests" */;
 			buildPhases = (
-				60F227348B06F7CC27F725CC /* [CP] Check Pods Manifest.lock */,
+				FF745388BBE217E01C96EF46 /* [CP] Check Pods Manifest.lock */,
 				B0D2401325C51E9600488BE2 /* Sources */,
 				B0D2401425C51E9600488BE2 /* Frameworks */,
 				B0D2401525C51E9600488BE2 /* Resources */,
-				B3627028AD70AE93A5F673BA /* [CP] Embed Pods Frameworks */,
+				003F438185C79011C749AA15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,7 +321,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16ECF10588849D67376B555E /* [CP] Check Pods Manifest.lock */ = {
+		003F438185C79011C749AA15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11BA3A7AA31C051CCD196139 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,7 +360,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3BCDE8BC9A2FC69858D36FFF /* [CP] Embed Pods Frameworks */ = {
+		2F2B3A90B57DE3767BF447AB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -357,7 +377,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Happiness Trinity/Pods-The Happiness Trinity-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		595A8E3F9BF3D48A88506E2A /* [CP] Check Pods Manifest.lock */ = {
+		924075A8E6BDDDBAFE37B499 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,7 +399,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		60F227348B06F7CC27F725CC /* [CP] Check Pods Manifest.lock */ = {
+		FF745388BBE217E01C96EF46 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,23 +421,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B3627028AD70AE93A5F673BA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,6 +435,7 @@
 				D05AC0BA25C60DC500662934 /* JournalViewController.swift in Sources */,
 				B0AC246825C64F3A00E2E056 /* AddContactViewController.swift in Sources */,
 				ABF7702425C6742C003A06EE /* PictureCollectionViewController.swift in Sources */,
+				ABF7703125C69550003A06EE /* PictureViewCell.swift in Sources */,
 				D05AC0BB25C60DC500662934 /* CalendarViewController.swift in Sources */,
 				B0D23FFC25C51E9400488BE2 /* SceneDelegate.swift in Sources */,
 			);
@@ -604,7 +608,7 @@
 		};
 		B0D2402125C51E9600488BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E431444600BC6E0E42096F4 /* Pods-The Happiness Trinity.debug.xcconfig */;
+			baseConfigurationReference = 42101BACCA0529CA0A64D989 /* Pods-The Happiness Trinity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -622,7 +626,7 @@
 		};
 		B0D2402225C51E9600488BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7706224B72631092F98E5FB9 /* Pods-The Happiness Trinity.release.xcconfig */;
+			baseConfigurationReference = 37F6DDA69CD373FBDB036402 /* Pods-The Happiness Trinity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -640,7 +644,7 @@
 		};
 		B0D2402425C51E9600488BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE01E4FB02A570A687617645 /* Pods-The Happiness TrinityTests.debug.xcconfig */;
+			baseConfigurationReference = EADB7005725518ADCE38B093 /* Pods-The Happiness TrinityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -662,7 +666,7 @@
 		};
 		B0D2402525C51E9600488BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBEAA22DC7CCD30316153A90 /* Pods-The Happiness TrinityTests.release.xcconfig */;
+			baseConfigurationReference = 24B9D663C065247DAB89D347 /* Pods-The Happiness TrinityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -684,7 +688,7 @@
 		};
 		B0D2402725C51E9600488BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F1C0E0E6A3FA5CF164C8E86 /* Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig */;
+			baseConfigurationReference = AE3984D0ADF690D688B33DF8 /* Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -704,7 +708,7 @@
 		};
 		B0D2402825C51E9600488BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B484D5237B05C1A3BEB560BF /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */;
+			baseConfigurationReference = 088417B72C88D824438E376B /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

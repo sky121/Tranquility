@@ -423,21 +423,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pjt-e8-YQ7">
-                                    <size key="itemSize" width="182" height="174"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pjt-e8-YQ7">
+                                    <size key="itemSize" width="195" height="219"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UpD-zD-aIU">
-                                        <rect key="frame" x="0.0" y="0.0" width="182" height="174"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PictureViewCell" id="UpD-zD-aIU" customClass="PictureViewCell" customModule="The_Happiness_Trinity" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="219"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SRd-Xn-ZyO">
-                                            <rect key="frame" x="0.0" y="0.0" width="182" height="174"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="219"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="MP3-fl-mX3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="182" height="174"/>
+                                        <size key="customSize" width="195" height="219"/>
+                                        <connections>
+                                            <outlet property="picture" destination="MP3-fl-mX3" id="tOz-X0-x9o"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -446,6 +455,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gkQ-cL-9Jf"/>
+                    <connections>
+                        <outlet property="collectionView" destination="0dL-Kd-nqd" id="RF8-2w-4ea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unh-cN-Ubh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
