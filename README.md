@@ -46,5 +46,6 @@ As far as we could tell, iOS development requires using Xcode, and Xcode is far 
 - Group meditation feature
 - Personalized emailing and texting 
 - Adjustable settings for background and music
+- Better editing for the journal (and actually saving user data between sessions)
 - Account system
 
