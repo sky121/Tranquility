@@ -10,8 +10,8 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
-    let access_token = "&client_id=idPu07ljZv9059UOqwNgNRGNUmZgMr92hQChgeVA6Pc"
-    let base_url = "https://api.unsplash.com/search/photos?query="
+    @IBOutlet weak var textField: UILabel!
+    
     var query = ""
 
     let group = DispatchGroup()
@@ -62,6 +62,9 @@ class ImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.layer.cornerRadius = 10.0
+        textField.clipsToBounds = true
         
         
         // Do any additional setup after loading the view.

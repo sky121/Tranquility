@@ -364,9 +364,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="simple" translatesAutoresizingMaskIntoConstraints="NO" id="yFT-1R-gJW" userLabel="simple">
+                                <rect key="frame" x="-4" y="0.0" width="418" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNm-B9-uOa">
                                 <rect key="frame" x="222" y="291" width="137" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88405972719192505" green="0.95711416006088257" blue="0.96744376420974731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Cats" image="cat-icon.">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
@@ -376,8 +381,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aki-kS-blQ">
-                                <rect key="frame" x="222" y="492" width="124" height="49"/>
+                                <rect key="frame" x="222" y="487" width="137" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88405972719192505" green="0.95711416006088257" blue="0.96744376420974731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Art" image="paint-icon.">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
@@ -386,20 +392,18 @@
                                     <action selector="onClickArt:" destination="SX6-Zx-6BS" eventType="touchUpInside" id="qOi-dG-FFh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBz-cP-N7u">
-                                <rect key="frame" x="44" y="492" width="144" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are you feeling like seeing?📷📷 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-YW-VA9" userLabel="What are you feeling like seeing?📷📷">
+                                <rect key="frame" x="38" y="135" width="338" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Nature" image="herb-icon.">
-                                    <color key="titleColor" systemColor="systemBlueColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="onClickNature:" destination="SX6-Zx-6BS" eventType="touchUpInside" id="Aic-fy-J8A"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="0.88405972719192505" green="0.95711416006088257" blue="0.96744376420974731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VW-P2-RNm">
                                 <rect key="frame" x="44" y="291" width="133" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88405972719192505" green="0.95711416006088257" blue="0.96744376420974731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Dogs" image="dog-icon">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
@@ -408,19 +412,25 @@
                                     <action selector="onClickDog:" destination="SX6-Zx-6BS" eventType="touchUpInside" id="h8m-dR-kLe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are you feeling like seeing?📷📷 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-YW-VA9">
-                                <rect key="frame" x="20" y="84" width="374" height="170"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBz-cP-N7u">
+                                <rect key="frame" x="31" y="486" width="159" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.88405972719192505" green="0.95711416006088257" blue="0.96744376420974731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Nature" image="herb-icon.">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickNature:" destination="SX6-Zx-6BS" eventType="touchUpInside" id="Aic-fy-J8A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6x9-RC-cab"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Picture Gallery" id="SJB-b3-g9q"/>
                     <connections>
+                        <outlet property="textField" destination="lEy-YW-VA9" id="bzs-rm-FSA"/>
                         <segue destination="eaV-O8-e8j" kind="show" identifier="onClickPreference" id="g3m-Ej-dl6"/>
                     </connections>
                 </viewController>
@@ -615,6 +625,7 @@
         <image name="lake" width="3648" height="5472"/>
         <image name="paint-icon." width="42.666667938232422" height="42.666667938232422"/>
         <image name="quotation-icon" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="simple" width="4488" height="3366"/>
         <image name="sky" width="5184" height="3456"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
