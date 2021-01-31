@@ -1,16 +1,12 @@
 PODS:
   - Alamofire (4.9.1)
   - FSCalendar (2.8.2)
-  - UnsplashPhotoPicker (1.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - FSCalendar
-  - UnsplashPhotoPicker (~> 1.1.1)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - UnsplashPhotoPicker
   trunk:
     - Alamofire
     - FSCalendar
@@ -18,8 +14,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
-  UnsplashPhotoPicker: 86520e34cfded8fb4a41910bf87afe571906b4e3
 
-PODFILE CHECKSUM: fc167de39f2f7b0aed7c6b7d52bc5deaf5f0ff4d
+PODFILE CHECKSUM: d5c0437de2e952e1ea4ec3d47408024cc0ef0380
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0

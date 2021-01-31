@@ -73,12 +73,12 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "TWILIO_AUTH_TOKEN"
-            value = "100f62933046abfda601eefc19143742"
+            value = "77a4f99725e709056b35ad502c84f959"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "TWILIO_ACCOUNT_SID"
-            value = "AC5a0605587355265f308d710f9b2e92fc"
+            value = "ACac1c4a36695280d2be6ba1943bbeb359"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
