@@ -14,6 +14,8 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var tableAccomps: UITableView!
     
+    var dateFormatter = DateFormatter()
+    //var accomps = [String : [String]]()
     var accomps = [String]()
     
     override func viewDidLoad() {
@@ -21,13 +23,16 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
 
         // Do any additional setup after loading the view.
         calendar.delegate = self
+        dateFormatter.dateStyle = .short
     }
     
     @IBAction func unwindToCalendar(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? JournalViewController, let achieve = sourceViewController.achieve {
             
+            let today = dateFormatter.string(from: Date())
+            // accomps[today].append(achieve)
             accomps.append(achieve)
-            print("added")
+            print("\(today): added \(achieve)")
         }
     }
     
