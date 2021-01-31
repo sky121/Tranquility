@@ -17,6 +17,11 @@ class JournalViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var congrats: UILabel!
     // confirm button, obviously
     @IBOutlet weak var confirmBtn: UIButton!
+    // cancel button
+    @IBOutlet weak var cancelBtn: UIBarButtonItem!
+    
+    // potential day's achievement
+    var achieve: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,28 +43,31 @@ class JournalViewController: UIViewController, UITextFieldDelegate {
         confirmBtn.isSelected = true
     }
     
-    // MARK: Actions
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        print("preparing")
+        
+        // transition upon cancel/go back
+        guard let button = sender as? UIBarButtonItem, (button === cancelBtn && achieve != nil) else {
+            return
+        }
+        
+        print("prepared")
+    }
     
+    // MARK: Actions
     // Confirm button action
     @IBAction func submitAccomp(_ sender: UIButton) {
         congrats.text = "🎉🎊🥳🎉🥳\n🎊🎉🥳🎊"
         confirmBtn.isSelected = false
         confirmBtn.isEnabled = false
+        achieve = answerAchieve.text
+        
+        let cancel = cancelBtn.customView as! UIButton
+        cancel.setTitle("Go Back", for: .normal)
+        cancel.sizeToFit()
     }
-    /*
-    @IBAction func updateList(_ sender: UIButton) {
-        //dynLabel.text = answerAchieve.text! + " :D"
-    }*/
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

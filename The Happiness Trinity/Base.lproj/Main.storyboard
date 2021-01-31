@@ -85,16 +85,16 @@
             </objects>
             <point key="canvasLocation" x="1330" y="-600"/>
         </scene>
-        <!--Journal-->
+        <!--Today-->
         <scene sceneID="8SP-rJ-EEh">
             <objects>
                 <viewController id="TFI-ej-77K" customClass="JournalViewController" customModule="The_Happiness_Trinity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tfD-mx-yvN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="s3j-nz-Scs">
-                                <rect key="frame" x="15" y="110" width="384" height="257.33333333333331"/>
+                                <rect key="frame" x="15" y="136" width="384" height="182.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is one accomplishment (big or small) that you are proud of today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-EL-bAF">
                                         <rect key="frame" x="9" y="0.0" width="366.33333333333331" height="104"/>
@@ -107,32 +107,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xA5-95-cZF">
-                                        <rect key="frame" x="150" y="222.33333333333331" width="84" height="35"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Confirm"/>
-                                        <connections>
-                                            <action selector="submitAccomp:" destination="TFI-ej-77K" eventType="touchUpInside" id="y1A-kO-3Cf"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="xA5-95-cZF" secondAttribute="trailing" constant="150" id="Auh-oO-cqE"/>
                                     <constraint firstAttribute="trailing" secondItem="zLf-Df-oTa" secondAttribute="trailing" constant="15" id="m61-lu-hPK"/>
                                     <constraint firstItem="zLf-Df-oTa" firstAttribute="leading" secondItem="s3j-nz-Scs" secondAttribute="leading" constant="15" id="qll-y8-UJ8"/>
-                                    <constraint firstItem="xA5-95-cZF" firstAttribute="leading" secondItem="s3j-nz-Scs" secondAttribute="leading" constant="150" id="syJ-T8-gja"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-yu-knl">
-                                <rect key="frame" x="60" y="599" width="294" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="See Calendar"/>
-                                <connections>
-                                    <segue destination="b3T-CY-lxO" kind="presentation" id="TfV-mQ-d84"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txS-3Z-Yb1">
-                                <rect key="frame" x="40" y="519" width="334" height="0.0"/>
+                                <rect key="frame" x="40" y="566" width="334" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,27 +123,44 @@
                         <viewLayoutGuide key="safeArea" id="A8S-E6-Qg5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MfY-yu-knl" firstAttribute="leading" secondItem="A8S-E6-Qg5" secondAttribute="leading" constant="60" id="09N-Fw-xF6"/>
-                            <constraint firstItem="A8S-E6-Qg5" firstAttribute="bottom" secondItem="MfY-yu-knl" secondAttribute="bottom" constant="40" id="11o-om-aVH"/>
+                            <constraint firstItem="A8S-E6-Qg5" firstAttribute="bottom" secondItem="txS-3Z-Yb1" secondAttribute="bottom" constant="150" id="64s-q0-PRC"/>
                             <constraint firstItem="s3j-nz-Scs" firstAttribute="leading" secondItem="tfD-mx-yvN" secondAttribute="leading" constant="15" id="6WY-7v-Fb8"/>
-                            <constraint firstItem="MfY-yu-knl" firstAttribute="top" secondItem="txS-3Z-Yb1" secondAttribute="bottom" constant="80" id="7qf-Wa-kv0"/>
                             <constraint firstAttribute="trailing" secondItem="s3j-nz-Scs" secondAttribute="trailing" constant="15" id="Z1L-dV-8vK"/>
                             <constraint firstItem="txS-3Z-Yb1" firstAttribute="leading" secondItem="A8S-E6-Qg5" secondAttribute="leading" constant="40" id="a04-Wx-5Iw"/>
                             <constraint firstItem="A8S-E6-Qg5" firstAttribute="trailing" secondItem="txS-3Z-Yb1" secondAttribute="trailing" constant="40" id="abL-zg-xnR"/>
-                            <constraint firstItem="s3j-nz-Scs" firstAttribute="top" secondItem="A8S-E6-Qg5" secondAttribute="top" constant="110" id="ciF-SX-syJ"/>
-                            <constraint firstItem="A8S-E6-Qg5" firstAttribute="trailing" secondItem="MfY-yu-knl" secondAttribute="trailing" constant="60" id="qIV-dK-Nm4"/>
+                            <constraint firstItem="s3j-nz-Scs" firstAttribute="top" secondItem="A8S-E6-Qg5" secondAttribute="top" constant="80" id="ciF-SX-syJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Journal" image="journal-icon" id="Nnx-0t-AAB"/>
+                    <navigationItem key="navigationItem" title="Today" id="w9K-F8-Tmr">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="KVR-9z-6ta">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="IL1-5z-3re">
+                                <rect key="frame" x="20" y="13" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="5SO-VM-YkM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="xA5-95-cZF">
+                                <rect key="frame" x="310" y="10.666666666666664" width="84" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="submitAccomp:" destination="TFI-ej-77K" eventType="touchUpInside" id="y1A-kO-3Cf"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="answerAchieve" destination="zLf-Df-oTa" id="ds9-NK-On1"/>
+                        <outlet property="cancelBtn" destination="KVR-9z-6ta" id="35z-Qt-5dn"/>
                         <outlet property="confirmBtn" destination="xA5-95-cZF" id="waO-yS-5y1"/>
                         <outlet property="congrats" destination="txS-3Z-Yb1" id="944-nQ-43R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teA-QV-Sph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3319" y="-622"/>
+            <point key="canvasLocation" x="5131.884057971015" y="216.84782608695653"/>
         </scene>
         <!--Images-->
         <scene sceneID="V6B-42-LzI">
@@ -192,7 +191,7 @@
                     <connections>
                         <segue destination="q5v-fh-hsM" kind="relationship" relationship="viewControllers" id="a1q-Q9-PdB"/>
                         <segue destination="hgv-xS-hsg" kind="relationship" relationship="viewControllers" id="GcW-NK-lMv"/>
-                        <segue destination="TFI-ej-77K" kind="relationship" relationship="viewControllers" id="x3r-n1-YyN"/>
+                        <segue destination="pdn-b6-UaZ" kind="relationship" relationship="viewControllers" id="x3r-n1-YyN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esa-1D-sg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -293,38 +292,90 @@
             </objects>
             <point key="canvasLocation" x="2303" y="968"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--Monthly Calendar-->
         <scene sceneID="Fli-eq-Ybo">
             <objects>
                 <viewController id="b3T-CY-lxO" customClass="CalendarViewController" customModule="The_Happiness_Trinity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ODa-mB-z8g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYW-5m-Zir" customClass="FSCalendar">
-                                <rect key="frame" x="5" y="10" width="404" height="300"/>
+                                <rect key="frame" x="5" y="54" width="404" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Wa2-bb-vOG"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-ep-9d8">
+                                <rect key="frame" x="0.0" y="354" width="414" height="333"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g4T-gg-4pA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="g4T-gg-4pA" firstAttribute="trailing" secondItem="OYW-5m-Zir" secondAttribute="trailing" constant="5" id="4ZN-cP-QeP"/>
                             <constraint firstItem="OYW-5m-Zir" firstAttribute="leading" secondItem="ODa-mB-z8g" secondAttribute="leading" constant="5" id="8iz-VA-ifU"/>
+                            <constraint firstItem="hWC-ep-9d8" firstAttribute="bottom" secondItem="g4T-gg-4pA" secondAttribute="bottom" id="H0M-RE-7gI"/>
+                            <constraint firstItem="hWC-ep-9d8" firstAttribute="leading" secondItem="g4T-gg-4pA" secondAttribute="leading" id="Px9-x2-Qa8"/>
                             <constraint firstItem="OYW-5m-Zir" firstAttribute="top" secondItem="g4T-gg-4pA" secondAttribute="top" constant="10" id="QAd-Dv-xNJ"/>
+                            <constraint firstItem="hWC-ep-9d8" firstAttribute="top" secondItem="OYW-5m-Zir" secondAttribute="bottom" id="d1V-of-3Us"/>
+                            <constraint firstItem="hWC-ep-9d8" firstAttribute="trailing" secondItem="g4T-gg-4pA" secondAttribute="trailing" id="dv2-MH-raV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7RO-dd-yfn"/>
+                    <navigationItem key="navigationItem" title="Monthly Calendar" id="7RO-dd-yfn">
+                        <barButtonItem key="rightBarButtonItem" title="Done Today" id="rSt-en-c7d">
+                            <connections>
+                                <segue destination="nLm-C6-IcQ" kind="presentation" id="U5r-Bc-bXg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="calendar" destination="OYW-5m-Zir" id="s7q-VJ-tjB"/>
+                        <outlet property="tableAccomps" destination="hWC-ep-9d8" id="mWL-Mg-vzi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Id9-xu-ek5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3319" y="217"/>
+            <point key="canvasLocation" x="3318.840579710145" y="216.84782608695653"/>
+        </scene>
+        <!--Journal-->
+        <scene sceneID="vOZ-ql-NQ8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pdn-b6-UaZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Journal" image="journal-icon" id="Nnx-0t-AAB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tIA-5N-x9B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b3T-CY-lxO" kind="relationship" relationship="rootViewController" id="nBD-Ev-o4J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9O-Wx-cLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3318.840579710145" y="-622.01086956521749"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RJ0-En-ABB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nLm-C6-IcQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xKJ-oR-Bxp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TFI-ej-77K" kind="relationship" relationship="rootViewController" id="2Pd-9m-ugN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2j-q5-mzW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4224.6376811594209" y="216.84782608695653"/>
         </scene>
     </scenes>
     <resources>
