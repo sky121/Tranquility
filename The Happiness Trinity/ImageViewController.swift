@@ -20,10 +20,20 @@ class ImageViewController: UIViewController {
     @IBAction func onClickDog(_ sender: Any) {
         query = query + "dog"
         let complete_url = base_url + query + access_token
-        network_request(complete_url)
+        
+        let group = DispatchGroup()
+        
+        group.enter()
+        network_request(complete_url,group)
+        
+        group.notify(queue: .main){
+            print("performing segue")
+            self.performSegue(withIdentifier: "onClickPreference", sender: self)
+        }
     }
     
-    func network_request(_ complete_url: String){
+    func network_request(_ complete_url: String, _ group: DispatchGroup){
+        
         
         let url = URL(string: complete_url)!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -34,9 +44,8 @@ class ImageViewController: UIViewController {
               print(error.localizedDescription)
            } else if let data = data {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-            print(dataDictionary)
             self.picture_gallery = dataDictionary["results"] as! [[String : Any]]
-
+            print("recevied images")
               // TODO: Get the array of movies
               // TODO: Store the movies in a property to use elsewhere
               // TODO: Reload your table view data
@@ -44,6 +53,7 @@ class ImageViewController: UIViewController {
            }
         }
         task.resume()
+        group.leave()
     }
     
     override func viewDidLoad() {
@@ -54,14 +64,17 @@ class ImageViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let pictureCollectionsViewController = segue.destination as! PictureCollectionViewController
+        pictureCollectionsViewController.picture_gallery = picture_gallery
+        print("preparing picture gallery in prepare method")
     }
-    */
+
 
 }
