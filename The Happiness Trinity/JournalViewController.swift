@@ -11,7 +11,12 @@ import UIKit
 class JournalViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
+    // text field
     @IBOutlet weak var answerAchieve: UITextField!
+    // label in the middle, initially empty
+    @IBOutlet weak var congrats: UILabel!
+    // confirm button, obviously
+    @IBOutlet weak var confirmBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +35,17 @@ class JournalViewController: UIViewController, UITextFieldDelegate {
     
     // after the field resigns first-responder status (in ShouldReturn)
     func textFieldDidEndEditing (_ textField: UITextField) {
-        //dynLabel.text = textField.text
+        confirmBtn.isSelected = true
     }
     
     // MARK: Actions
     
+    // Confirm button action
+    @IBAction func submitAccomp(_ sender: UIButton) {
+        congrats.text = "🎉🎊🥳🎉🥳\n🎊🎉🥳🎊"
+        confirmBtn.isSelected = false
+        confirmBtn.isEnabled = false
+    }
     /*
     @IBAction func updateList(_ sender: UIButton) {
         //dynLabel.text = answerAchieve.text! + " :D"
