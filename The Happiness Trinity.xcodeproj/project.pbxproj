@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25F7EBC040D480E8055778FB /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		25F7EBC040D480E8055778FB /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		294278A232A4B3DB6A609EA2 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092CA9C4191BEDC9E44E0B35 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */; };
-		2D1C18E8CD8733A0CB9C7A6D /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		2D1C18E8CD8733A0CB9C7A6D /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		552EEEF716AA89D16845AF97 /* Pods_The_Happiness_Trinity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F535F3F458106D982DE4F64 /* Pods_The_Happiness_Trinity.framework */; };
 		96A5489F2C9099DA0474CE22 /* Pods_The_Happiness_TrinityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1F0E3FAB11373410C295BC /* Pods_The_Happiness_TrinityTests.framework */; };
 		ABF76FEB25C5FCDE003A06EE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */; };
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F7EBC040D480E8055778FB /* BuildFile in Frameworks */,
+				25F7EBC040D480E8055778FB /* (null) in Frameworks */,
 				552EEEF716AA89D16845AF97 /* Pods_The_Happiness_Trinity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1C18E8CD8733A0CB9C7A6D /* BuildFile in Frameworks */,
+				2D1C18E8CD8733A0CB9C7A6D /* (null) in Frameworks */,
 				294278A232A4B3DB6A609EA2 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A743294PL3;
 				INFOPLIST_FILE = "The Happiness Trinity/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,6 +639,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A743294PL3;
 				INFOPLIST_FILE = "The Happiness Trinity/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

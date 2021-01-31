@@ -34,28 +34,17 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDe
         
         
         // debug only
-        accomps["1/1/21"] = ["a"]
-        accomps["1/2/21"] = ["a", "b"]
-        accomps["1/3/21"] = ["a", "b", "c"]
-        accomps["1/4/21"] = ["a", "b", "c", "d"]
-        accomps["1/5/21"] = ["a", "b", "c", "d", "e"]
-        accomps["1/6/21"] = ["a", "b", "c", "d", "e", "f"]
-        accomps["1/7/21"] = ["a", "b", "c", "d", "e", "f", "g"]
-        accomps["1/8/21"] = ["a", "b", "c", "d", "e", "f", "g", "h"]
-        accomps["1/9/21"] = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
-        accomps["1/29/21"] = ["a", "b", "c"]
-        accomps["1/26/21"] = ["code", "study"]
-        accomps["1/30/21"] = ["eleven"]
-        
-        
+        accomps["1/1/21"] = ["celebrated"]
+        accomps["1/2/21"] = ["ran", "coded"]
+        accomps["1/3/21"] = ["read", "exercised", "did HW"]
+        accomps["1/4/21"] = ["aced a test", "did HW"]
+        accomps["1/7/21"] = ["read a good story"]
+        accomps["1/29/21"] = ["ate some good food"]
+        accomps["1/26/21"] = ["coded", "studied"]
+        accomps["1/30/21"] = ["took a test and did well"]
         
         tableAccomps.reloadData()
     }
-    
-    /*
-    func buildFromJSON () {
-        
-    }*/
     
     // number of rows in table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
