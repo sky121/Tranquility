@@ -16,16 +16,13 @@ The Journal feature keeps track of all the accomplishments a user writes down. T
 
 
 # How we built it
-Very early on, we decided to create an iOS app, since all of us have Macs and iPhones. Naturally, the foundation of our project is Swift. We separated our project into three main functionalities that each of us could build more or less independently. 
-First, the Quote portion of the app is built using:
-Flask
-Swift
-XCode
-Python
-Bs4
-
-Second, the [I forget what Jimmys part is called]
-And third, the Journal part of the app relies partially on a pod called FSCalendar that allowed us to very quickly include a basic calendar into the GUI.
+Very early on, we decided to create an iOS app, since all of us have Macs and iPhones. Naturally, the foundation of our project is Swift. We separated our project into three main functionalities that each of us could build more or less independently. The Quotes, the Gallery, and the Journal. These were built with:
+- Flask
+- Swift
+- XCode
+- Python
+- bs4
+- FSCalendar 
 
 # Challenges we ran into
 As far as we could tell, iOS development requires using Xcode, and Xcode is far from perfect. It crashes from tapping control-z and more significantly, it doesn’t really cooperate with version control. Every time we had a merge conflict using Git, Xcode refused to open the project at all. It was very annoying to have to open up VS Code and deal with the merging in a different editor.  Furthermore, the merging issue was particularly bad with the main.storyboard file, to the point where it was just easier to only ever have one person work on it at a time. This greatly hindered our productivity. The second big problem was that seemingly randomly, pods that we had been using were no longer working after the latest push. So we had to figure out how to get all our dependencies working. Overall, we learned quite a lot about Swift and IOS development. Being our first times really working on an IOS project it was a challenging experience.
@@ -33,21 +30,22 @@ As far as we could tell, iOS development requires using Xcode, and Xcode is far 
 ![](https://media.giphy.com/media/l1J9NRpOeS7i54xnW/giphy.gif)
 
 # Accomplishments that we are proud of
-an app that builds and runs…. Without xcode crashing!
-There was a time when all the Git/Xcode problems were highly concerning…
-Fixing the endless stream of merge conflicts with Xcode
+1. an app that builds and runs…. Without xcode crashing!
+2. There was a time when all the Git/Xcode problems were highly concerning…
+3. Fixing the endless stream of merge conflicts with Xcode
  
 # What we learned
-Coding in Swift and an iOS app 
-Understanding Swift language features
-XCode…. And all of its bugs
-How to stay calm when XCode crashes
-Not to work on the storyboard at the same time
-Merge conflicts galore
+- Coding in Swift and an iOS app 
+- Understanding Swift language features
+- XCode… And all of its bugs
+- How to stay calm when XCode crashes
+- Not to work on the storyboard at the same time
+- Merge conflicts galore
 
 # What's next for Tranquility
-Group meditation feature
-Personalized emailing and texting 
-Adjustable settings for background and music
-Account system
+- Group meditation feature
+- Personalized emailing and texting 
+- Adjustable settings for background and music
+- Better editing for the journal (and actually saving user data between sessions)
+- Account system
 
