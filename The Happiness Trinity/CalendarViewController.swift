@@ -48,8 +48,14 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDe
         accomps["1/30/21"] = ["eleven"]
         
         
+        
         tableAccomps.reloadData()
     }
+    
+    /*
+    func buildFromJSON () {
+        
+    }*/
     
     // number of rows in table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,22 +75,27 @@ class CalendarViewController: UIViewController, FSCalendarDelegate, FSCalendarDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dayArray = accomps[dayForTable]
         var text = ""
-        if dayArray != nil && indexPath.row < dayArray!.count {
+        var color: UIColor = .white
+        if dayArray != nil && indexPath.row < dayArray!.count && dayArray!.count > 0 {
             text = dayArray![indexPath.row]
+            color = colors[min(dayArray!.count - 1, colors.count - 1)]
         }
         
-        /*  // in storyboard: set constraint height, add the prototype cell (called Table View Cell),
+          // in storyboard: set constraint height, add the prototype cell (called Table View Cell),
             // add label, create actual outlet,set those 2 fields for AccompCell, add 0 lines for the line
             // size of the label
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccompCell") as! AccompCell
         cell.accompLabel.text = text
-         */
+        cell.accompColor.backgroundColor = color
+        cell.accompColor.textColor = color
         
+        /*
         let cell = UITableViewCell()
         cell.textLabel!.text = text
         //cell.backgroundColor = 
         //print("\(cell.textLabel!.text)")
-        
+        */
+ 
         return cell
     }
     

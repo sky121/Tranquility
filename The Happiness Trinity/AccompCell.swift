@@ -11,6 +11,7 @@ import UIKit
 class AccompCell: UITableViewCell {
 
     @IBOutlet weak var accompLabel: UILabel!
+    @IBOutlet weak var accompColor: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
