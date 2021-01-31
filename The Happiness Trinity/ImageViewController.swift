@@ -27,6 +27,39 @@ class ImageViewController: UIViewController {
         
     }
     
+    @IBAction func onClickCat(_ sender: Any) {
+        group.enter()
+        query = query + "cat"
+        group.leave()
+        
+        group.notify(queue: DispatchQueue.main){
+            self.performSegue(withIdentifier: "onClickPreference", sender: self)
+        }
+    }
+    
+    @IBAction func onClickNature(_ sender: Any) {
+        
+        group.enter()
+        query = query + "Nature"
+        group.leave()
+        
+        group.notify(queue: DispatchQueue.main){
+            self.performSegue(withIdentifier: "onClickPreference", sender: self)
+        }
+    }
+    
+    
+    @IBAction func onClickArt(_ sender: Any) {
+        
+        group.enter()
+        query = query + "Art"
+        group.leave()
+        
+        group.notify(queue: DispatchQueue.main){
+            self.performSegue(withIdentifier: "onClickPreference", sender: self)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +78,7 @@ class ImageViewController: UIViewController {
         
         let pictureCollectionsViewController = segue.destination as! PictureCollectionViewController
         pictureCollectionsViewController.query = self.query
+        query = ""
     }
 
 
