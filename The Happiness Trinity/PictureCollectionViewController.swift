@@ -11,13 +11,12 @@ import UIKit
 class PictureCollectionViewController: UIViewController {
 
     
-    var picture_gallery: [[String:Any]]!
+    var picture_gallery = [[String:Any]]()
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("I am in pictures collections")
-        print(picture_gallery)
 
         // Do any additional setup after loading the view.
     }

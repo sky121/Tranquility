@@ -15,24 +15,10 @@ class ImageViewController: UIViewController {
     var query = ""
     
     var picture_gallery = [[String:Any]]()
+    let group = DispatchGroup()
     
     
-    @IBAction func onClickDog(_ sender: Any) {
-        query = query + "dog"
-        let complete_url = base_url + query + access_token
-        
-        let group = DispatchGroup()
-        
-        group.enter()
-        network_request(complete_url,group)
-        
-        group.notify(queue: .main){
-            print("performing segue")
-            self.performSegue(withIdentifier: "onClickPreference", sender: self)
-        }
-    }
-    
-    func network_request(_ complete_url: String, _ group: DispatchGroup){
+    func network_request(_ complete_url: String){
         
         
         let url = URL(string: complete_url)!
@@ -53,7 +39,23 @@ class ImageViewController: UIViewController {
            }
         }
         task.resume()
+    }
+    
+    @IBAction func onClickDog(_ sender: Any) {
+        query = query + "dog"
+        let complete_url = base_url + query + access_token
+        
+        
+        
+        group.enter()
+        network_request(complete_url)
         group.leave()
+        
+        group.notify(queue: DispatchQueue.main){
+            print("performing segue")
+            self.performSegue(withIdentifier: "onClickPreference", sender: self)
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -71,9 +73,12 @@ class ImageViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let pictureCollectionsViewController = segue.destination as! PictureCollectionViewController
-        pictureCollectionsViewController.picture_gallery = picture_gallery
-        print("preparing picture gallery in prepare method")
+        
+        group.notify(queue: DispatchQueue.main){
+            let pictureCollectionsViewController = segue.destination as! PictureCollectionViewController
+            pictureCollectionsViewController.picture_gallery = self.picture_gallery
+            print("preparing picture gallery in prepare method")
+        }
     }
 
 

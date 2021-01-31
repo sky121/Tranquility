@@ -20,9 +20,9 @@ class QuoteViewController: UIViewController, ContactDelegate {
     
     @IBOutlet weak var QuoteLabel: UILabel!
     var randomQuote: String = "";
-    var phoneNumbers = [String]()
+    var phoneNumber: String = "";
     func numberConfirmed(_ number: String) {
-        phoneNumbers.append(number)
+        phoneNumber = number
         print("phone number added:", number)
     }
     @IBAction func AddContactButton(_ sender: Any) {
@@ -33,22 +33,22 @@ class QuoteViewController: UIViewController, ContactDelegate {
         }
     }
     @IBAction func SendButton(_ sender: Any) {
-        if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"],
-            let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
-            print(accountSID, authToken)
-            let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-            let parameters = ["From": "16093364149", "To": "4159609350", "Body": randomQuote]
-            print("sending message")
-            Alamofire.request(url, method: .post, parameters: parameters)
-            .authenticate(user: accountSID, password: authToken)
-            .responseJSON { response in
-              debugPrint(response)
-            }
-            performSegue(withIdentifier: "Success", sender: sender)
-            RunLoop.main.run()
-        }else{
-           print("Environment Variables Not Set")
+        let headers = [
+            "Content-Type": "application/x-www-form-urlencoded"
+        ]
+        
+        let parameters: Parameters = [
+            "To": phoneNumber,
+            "Body": randomQuote
+        ]
+        
+        Alamofire.request("http://127.0.0.1:5000/sms", method: .post, parameters: parameters, headers: headers).response { response in
+                print(response)
+            
         }
+        
+        performSegue(withIdentifier: "Success", sender: sender)
+        
     }
     
     override func viewDidLoad() {
