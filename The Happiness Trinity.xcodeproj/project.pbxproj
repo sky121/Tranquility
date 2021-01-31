@@ -23,6 +23,7 @@
 		B0D2401C25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2401B25C51E9600488BE2 /* The_Happiness_TrinityUITests.swift */; };
 		D05AC0BA25C60DC500662934 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AC0B825C60DC500662934 /* JournalViewController.swift */; };
 		D05AC0BB25C60DC500662934 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AC0B925C60DC500662934 /* CalendarViewController.swift */; };
+		D066933825C69B4800E4136F /* AccompCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D066933725C69B4800E4136F /* AccompCell.swift */; };
 		F9EAAC1C8A9ACF0DEE63C75D /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E90D8DCAAACF1B417A79B37 /* Pods_The_Happiness_Trinity_The_Happiness_TrinityUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		B484D5237B05C1A3BEB560BF /* Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D05AC0B825C60DC500662934 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		D05AC0B925C60DC500662934 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D066933725C69B4800E4136F /* AccompCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccompCell.swift; sourceTree = "<group>"; };
 		EBEAA22DC7CCD30316153A90 /* Pods-The Happiness TrinityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.release.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE01E4FB02A570A687617645 /* Pods-The Happiness TrinityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness TrinityTests.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness TrinityTests/Pods-The Happiness TrinityTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 				B0D23FFB25C51E9400488BE2 /* SceneDelegate.swift */,
 				B0D23FFD25C51E9400488BE2 /* ViewController.swift */,
 				B0D23FFF25C51E9400488BE2 /* Main.storyboard */,
+				D066933725C69B4800E4136F /* AccompCell.swift */,
 				B0D2400225C51E9600488BE2 /* Assets.xcassets */,
 				B0D2400425C51E9600488BE2 /* LaunchScreen.storyboard */,
 				B0D2400725C51E9600488BE2 /* Info.plist */,
@@ -425,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D066933825C69B4800E4136F /* AccompCell.swift in Sources */,
 				B0D23FFE25C51E9400488BE2 /* ViewController.swift in Sources */,
 				B0AC246625C5E6A700E2E056 /* QuoteViewController.swift in Sources */,
 				ABF76FEB25C5FCDE003A06EE /* ImageViewController.swift in Sources */,
