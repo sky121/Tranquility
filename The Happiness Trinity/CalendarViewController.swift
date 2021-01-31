@@ -15,8 +15,8 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet weak var tableAccomps: UITableView!
     
     var dateFormatter = DateFormatter()
-    //var accomps = [String : [String]]()
-    var accomps = [String]()
+    var accomps = [String : [String]]()
+    //var accomps = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,20 +24,32 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
         // Do any additional setup after loading the view.
         calendar.delegate = self
         dateFormatter.dateStyle = .short
+        
+        // debug only
+        accomps["1/29/21"] = ["a", "b", "c"]
+        accomps["1/26/21"] = ["code", "study"]
+        
     }
     
     @IBAction func unwindToCalendar(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? JournalViewController, let achieve = sourceViewController.achieve {
             
             let today = dateFormatter.string(from: Date())
-            // accomps[today].append(achieve)
-            accomps.append(achieve)
-            print("\(today): added \(achieve)")
+            var todaysTasks = accomps[today]
+            if todaysTasks == nil {
+                todaysTasks = [achieve]
+            }
+            else {
+                todaysTasks!.append(achieve)
+            }
+            accomps[today] = todaysTasks
+            //print("\(today): added \(accomps)")
         }
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        print("test")
+        let dateSelected = dateFormatter.string(from: date)
+        print("\(accomps[dateSelected])")
     }
 
     /*

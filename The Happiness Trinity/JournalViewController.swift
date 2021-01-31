@@ -47,14 +47,12 @@ class JournalViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
-        print("preparing")
-        
         // transition upon cancel/go back
         guard let button = sender as? UIBarButtonItem, (button === cancelBtn && achieve != nil) else {
             return
         }
-        
-        print("prepared")
+        // somehow both cases get caught up... but I guess it's not important as of now
+        //      the casting makes button == nil...
     }
     
     // MARK: Actions
