@@ -41,7 +41,7 @@ class QuoteViewController: UIViewController, ContactDelegate {
             "To": phoneNumber,
             "Body": randomQuote
         ]
-        
+        print(parameters)
         Alamofire.request("http://127.0.0.1:5000/sms", method: .post, parameters: parameters, headers: headers).response { response in
                 print(response)
             
@@ -54,6 +54,20 @@ class QuoteViewController: UIViewController, ContactDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         randomQuote = quotesArray.randomElement()!
+        print(randomQuote)
+        
+        //COMMENT BELOW OUT IF YOU DONT HAVE SERVER RUNNING
+        Alamofire.request("http://127.0.0.1:5000/quote").responseJSON{ response
+            in
+            if let json = response.result.value as! [String:Any]?{
+                if let responseValue = json["value"] as! String?{
+                    self.QuoteLabel.text =  responseValue
+                    self.randomQuote = responseValue
+                    print(responseValue)
+                }
+            }
+        }
+        //COMMENT ABOVE OUT IF YOU DONT HAVE SERVER RUNNING
         QuoteLabel.text = randomQuote
         
         // Do any additional setup after loading the view.
