@@ -55,6 +55,8 @@ class QuoteViewController: UIViewController, ContactDelegate {
         super.viewDidLoad()
         randomQuote = quotesArray.randomElement()!
         print(randomQuote)
+        
+        //COMMENT BELOW OUT IF YOU DONT HAVE SERVER RUNNING
         Alamofire.request("http://127.0.0.1:5000/quote").responseJSON{ response
             in
             if let json = response.result.value as! [String:Any]?{
@@ -65,6 +67,7 @@ class QuoteViewController: UIViewController, ContactDelegate {
                 }
             }
         }
+        //COMMENT ABOVE OUT IF YOU DONT HAVE SERVER RUNNING
         QuoteLabel.text = randomQuote
         
         // Do any additional setup after loading the view.
