@@ -430,6 +430,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Picture Gallery" id="SJB-b3-g9q"/>
                     <connections>
+                        <outlet property="artButton" destination="aki-kS-blQ" id="wGZ-DE-q1b"/>
+                        <outlet property="catButton" destination="xNm-B9-uOa" id="90U-No-WPN"/>
+                        <outlet property="dogButton" destination="5VW-P2-RNm" id="BEe-8N-3BP"/>
+                        <outlet property="natureButton" destination="eBz-cP-N7u" id="8Ou-HH-6mc"/>
                         <outlet property="textField" destination="lEy-YW-VA9" id="bzs-rm-FSA"/>
                         <segue destination="eaV-O8-e8j" kind="show" identifier="onClickPreference" id="g3m-Ej-dl6"/>
                     </connections>

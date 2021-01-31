@@ -12,6 +12,11 @@ class ImageViewController: UIViewController {
 
     @IBOutlet weak var textField: UILabel!
     
+    
+    @IBOutlet weak var dogButton: UIButton!
+    @IBOutlet weak var catButton: UIButton!
+    @IBOutlet weak var artButton: UIButton!
+    @IBOutlet weak var natureButton: UIButton!
     var query = ""
 
     let group = DispatchGroup()
@@ -65,7 +70,14 @@ class ImageViewController: UIViewController {
         
         textField.layer.cornerRadius = 10.0
         textField.clipsToBounds = true
-        
+        dogButton.layer.cornerRadius = 10.0
+        catButton.layer.cornerRadius = 10.0
+        natureButton.layer.cornerRadius = 10.0
+        artButton.layer.cornerRadius = 10.0
+        dogButton.clipsToBounds = true
+        catButton.clipsToBounds = true
+        natureButton.clipsToBounds = true
+        artButton.clipsToBounds = true
         
         // Do any additional setup after loading the view.
     }
