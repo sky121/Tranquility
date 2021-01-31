@@ -6,13 +6,15 @@ target 'The Happiness Trinity' do
   use_frameworks!
 
   # Pods for The Happiness Trinity
-  pod 'Alamofire', '~> 4.4'
+  pod 'Alamofire', '~> 4.4'  
+  pod 'AlamofireImage'   
+  pod 'FSCalendar'
+
   target 'The Happiness TrinityTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  pod 'FSCalendar'
 
   target 'The Happiness TrinityUITests' do
     # Pods for testing

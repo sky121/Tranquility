@@ -1,20 +1,25 @@
 PODS:
   - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - FSCalendar (2.8.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - AlamofireImage
   - FSCalendar
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
     - FSCalendar
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
 
-PODFILE CHECKSUM: d5c0437de2e952e1ea4ec3d47408024cc0ef0380
+PODFILE CHECKSUM: fdd277b39170f086d72c8cb1bc0171542a1cd7f6
 
 COCOAPODS: 1.10.1
