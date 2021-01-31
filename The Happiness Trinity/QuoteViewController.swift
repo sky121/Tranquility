@@ -33,23 +33,22 @@ class QuoteViewController: UIViewController, ContactDelegate {
         }
     }
     @IBAction func SendButton(_ sender: Any) {
-        if let accountSID = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"],
-            let authToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"] {
-            if(phoneNumber == ""){
-                print("No phone number added")
-            }
-            print(accountSID, authToken, phoneNumber)
-            let url = "https://api.twilio.com/2010-04-01/Accounts/\(accountSID)/Messages"
-            let parameters = ["From": "16093364149", "To": phoneNumber, "Body": randomQuote]
-            Alamofire.request(url, method: .post, parameters: parameters)
-            .authenticate(user: accountSID, password: authToken)
-            .responseJSON { response in
-                debugPrint(response)
-            }
-            performSegue(withIdentifier: "Success", sender: sender)
-        }else{
-           print("Environment Variables Not Set")
+        let headers = [
+            "Content-Type": "application/x-www-form-urlencoded"
+        ]
+        
+        let parameters: Parameters = [
+            "To": phoneNumber,
+            "Body": randomQuote
+        ]
+        
+        Alamofire.request("http://127.0.0.1:5000/sms", method: .post, parameters: parameters, headers: headers).response { response in
+                print(response)
+            
         }
+        
+        performSegue(withIdentifier: "Success", sender: sender)
+        
     }
     
     override func viewDidLoad() {
