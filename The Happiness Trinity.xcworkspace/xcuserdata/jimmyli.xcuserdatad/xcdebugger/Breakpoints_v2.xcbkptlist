@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7A09E4E9-518B-4323-AB6B-1330E51DA25C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66AC15D9-61BA-4549-8E37-FD08CF5898CC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Happiness Trinity/CalendarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "CalendarViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "66AC15D9-61BA-4549-8E37-FD08CF5898CC - 43bb2d4165ef8efd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "The_Happiness_Trinity.CalendarViewController.accomps.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "The Happiness Trinity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jimmyli/Desktop/IOS_Project/The-Happiness-Trinity/The%20Happiness%20Trinity/CalendarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "66AC15D9-61BA-4549-8E37-FD08CF5898CC - 2123aaef46ac72e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "The_Happiness_Trinity.CalendarViewController.accomps.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "The Happiness Trinity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jimmyli/Desktop/IOS_Project/The-Happiness-Trinity/The%20Happiness%20Trinity/CalendarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "66AC15D9-61BA-4549-8E37-FD08CF5898CC - 892687d0951557a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "The_Happiness_Trinity.CalendarViewController.accomps.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "The Happiness Trinity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jimmyli/Desktop/IOS_Project/The-Happiness-Trinity/The%20Happiness%20Trinity/CalendarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "66AC15D9-61BA-4549-8E37-FD08CF5898CC - e39ecce3c5c113a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "The_Happiness_Trinity.CalendarViewController.accomps.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "The Happiness Trinity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jimmyli/Desktop/IOS_Project/The-Happiness-Trinity/The%20Happiness%20Trinity/CalendarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "66AC15D9-61BA-4549-8E37-FD08CF5898CC - db6bf442dafdd427"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "The_Happiness_Trinity.CalendarViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; The_Happiness_Trinity.CalendarViewController"
+                  moduleName = "The Happiness Trinity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jimmyli/Desktop/IOS_Project/The-Happiness-Trinity/The%20Happiness%20Trinity/CalendarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "457">
+               </Location>
+               <Location
+                  uuid = "66AC15D9-61BA-4549-8E37-FD08CF5898CC - d435e175228a13b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "The_Happiness_Trinity.CalendarViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;The_Happiness_Trinity.CalendarViewController&gt;"
+                  moduleName = "The Happiness Trinity"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jimmyli/Desktop/IOS_Project/The-Happiness-Trinity/The%20Happiness%20Trinity/CalendarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

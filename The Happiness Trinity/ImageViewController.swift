@@ -34,6 +34,7 @@ class ImageViewController: UIViewController {
               print(error.localizedDescription)
            } else if let data = data {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+            print(dataDictionary)
             self.picture_gallery = dataDictionary["results"] as! [[String : Any]]
 
               // TODO: Get the array of movies

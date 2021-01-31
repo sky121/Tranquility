@@ -12,12 +12,23 @@ import UIKit
 class CalendarViewController: UIViewController, FSCalendarDelegate {
     
     @IBOutlet weak var calendar: FSCalendar!
+    @IBOutlet weak var tableAccomps: UITableView!
+    
+    var accomps = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         calendar.delegate = self
+    }
+    
+    @IBAction func unwindToCalendar(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? JournalViewController, let achieve = sourceViewController.achieve {
+            
+            accomps.append(achieve)
+            print("added")
+        }
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
