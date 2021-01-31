@@ -10,6 +10,7 @@
 		02F237C3E7EB38EC6E7DE85D /* Pods_The_Happiness_TrinityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2372030F55ED49CA337AA199 /* Pods_The_Happiness_TrinityTests.framework */; };
 		601515580739887DA7674226 /* Pods_The_Happiness_Trinity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27025BBC73F4DFC1AA8FF519 /* Pods_The_Happiness_Trinity.framework */; };
 		ABF76FEB25C5FCDE003A06EE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */; };
+		ABF7702425C6742C003A06EE /* PictureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7702325C6742C003A06EE /* PictureCollectionViewController.swift */; };
 		B0AC246625C5E6A700E2E056 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */; };
 		B0AC246825C64F3A00E2E056 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AC246725C64F3A00E2E056 /* AddContactViewController.swift */; };
 		B0D23FFA25C51E9400488BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D23FF925C51E9400488BE2 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		6F1C0E0E6A3FA5CF164C8E86 /* Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity-The Happiness TrinityUITests/Pods-The Happiness Trinity-The Happiness TrinityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7706224B72631092F98E5FB9 /* Pods-The Happiness Trinity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Happiness Trinity.release.xcconfig"; path = "Target Support Files/Pods-The Happiness Trinity/Pods-The Happiness Trinity.release.xcconfig"; sourceTree = "<group>"; };
 		ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		ABF7702325C6742C003A06EE /* PictureCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewController.swift; sourceTree = "<group>"; };
 		B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		B0AC246725C64F3A00E2E056 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		B0D23FF625C51E9400488BE2 /* The Happiness Trinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Happiness Trinity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 				B0AC246525C5E6A700E2E056 /* QuoteViewController.swift */,
 				ABF76FEA25C5FCDE003A06EE /* ImageViewController.swift */,
 				B0AC246725C64F3A00E2E056 /* AddContactViewController.swift */,
+				ABF7702325C6742C003A06EE /* PictureCollectionViewController.swift */,
 			);
 			path = "The Happiness Trinity";
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				B0D23FFA25C51E9400488BE2 /* AppDelegate.swift in Sources */,
 				D05AC0BA25C60DC500662934 /* JournalViewController.swift in Sources */,
 				B0AC246825C64F3A00E2E056 /* AddContactViewController.swift in Sources */,
+				ABF7702425C6742C003A06EE /* PictureCollectionViewController.swift in Sources */,
 				D05AC0BB25C60DC500662934 /* CalendarViewController.swift in Sources */,
 				B0D23FFC25C51E9400488BE2 /* SceneDelegate.swift in Sources */,
 			);
